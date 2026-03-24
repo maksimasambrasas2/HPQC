@@ -17,20 +17,27 @@
 ```bash
 gcc week2/src/write_file.c -o bin_write_file
 gcc week2/src/read_file.c -o bin_read_file
-Run programs
+```
+
+### Run programs
 
 Python:
-
+```bash
 python3 week2/src/write_file.py 1000
 python3 week2/src/read_file.py
+```
 
 C:
-
+```bash
 ./bin_write_file 1000
 ./bin_read_file
-Measure execution time
+```
+
+### Measure execution time
+```bash
 time python3 week2/src/write_file.py 1000
 time ./bin_write_file 1000
+```
 
 ## Results
 
@@ -47,7 +54,7 @@ time ./bin_write_file 1000
 | Python | read file | 100 lines | 0.00013 | 0.028 |
 | C | read file | 100 lines | 0.0001 | ~0.004 |
 
-### Conclusion
+## Conclusion
 
 The performance of C and Python programs was compared using both the Linux time command and internal timing methods.
 
@@ -58,8 +65,7 @@ Overall, C programs were consistently faster than Python programs. This is becau
 The internal timing results showed that writing and reading files takes longer as the number of lines increases, although the increase is small for the file sizes used. File input/output also involves system-level operations, which contributes to runtime.
 
 In conclusion:
-
-C is faster than Python for most operations
-runtime increases with input size, especially in loops
-file operations add extra overhead
-internal timing measures specific parts of code, while the time command measures total runtime
+- C is faster than Python for most operations
+- runtime increases with input size, especially in loops
+- file operations add extra overhead
+- internal timing measures specific parts of code, while the time command measures total runtime
