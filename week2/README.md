@@ -32,7 +32,7 @@ Measure execution time
 time python3 week2/src/write_file.py 1000
 time ./bin_write_file 1000
 
-Results
+## Results
 
 | Program | Operation | Input | Internal Time (s) | Real Time (s) |
 |---------|-----------|--------|-------------------|---------------|
@@ -47,7 +47,7 @@ Results
 | Python | read file | 100 lines | 0.00013 | 0.028 |
 | C | read file | 100 lines | 0.0001 | ~0.004 |
 
-Conclusion
+### Conclusion
 
 The performance of C and Python programs was compared using both the Linux time command and internal timing methods.
 
