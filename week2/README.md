@@ -31,18 +31,22 @@ C:
 Measure execution time
 time python3 week2/src/write_file.py 1000
 time ./bin_write_file 1000
+
 Results
-Program	Operation	Input	Internal Time (s)	Real Time (s)
-Python	repeat_adder	1000,10	N/A	0.034
-Python	repeat_adder	100000,10	N/A	0.035
-C	repeat_adder	1000,10	N/A	~0.004
-C	repeat_adder	100000,10	N/A	~0.004
-Python	write file	100 lines	0.00022	0.028
-Python	write file	1000 lines	0.00046	0.030
-C	write file	100 lines	0.000038	~0.004
-C	write file	1000 lines	0.00023	~0.004
-Python	read file	100 lines	0.00013	0.028
-C	read file	100 lines	0.0001	~0.004
+
+| Program | Operation | Input | Internal Time (s) | Real Time (s) |
+|--------|----------|-------|------------------|--------------|
+| Python | repeat_adder | 1000,10 | N/A | 0.034 |
+| Python | repeat_adder | 100000,10 | N/A | 0.035 |
+| C | repeat_adder | 1000,10 | N/A | ~0.004 |
+| C | repeat_adder | 100000,10 | N/A | ~0.004 |
+| Python | write file | 100 lines | 0.00022 | 0.028 |
+| Python | write file | 1000 lines | 0.00046 | 0.030 |
+| C | write file | 100 lines | 0.000038 | ~0.004 |
+| C | write file | 1000 lines | 0.00023 | ~0.004 |
+| Python | read file | 100 lines | 0.00013 | 0.028 |
+| C | read file | 100 lines | 0.0001 | ~0.004 |
+
 Conclusion
 
 The performance of C and Python programs was compared using both the Linux time command and internal timing methods.
