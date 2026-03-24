@@ -35,7 +35,7 @@ time ./bin_write_file 1000
 Results
 
 | Program | Operation | Input | Internal Time (s) | Real Time (s) |
-|--------|----------|-------|------------------|--------------|
+|---------|-----------|--------|-------------------|---------------|
 | Python | repeat_adder | 1000,10 | N/A | 0.034 |
 | Python | repeat_adder | 100000,10 | N/A | 0.035 |
 | C | repeat_adder | 1000,10 | N/A | ~0.004 |
