@@ -83,7 +83,7 @@ Fill this in with your own output after running the program.
 
 ---
 
-## Example Discussion
+## Discussion
 
 As Grover's algorithm progressed, the probability of measuring the correct value for qubit 0 increased while the probability of measuring the wrong value decreased. This showed that the algorithm was successfully amplifying the amplitude of the correct solution.
 
